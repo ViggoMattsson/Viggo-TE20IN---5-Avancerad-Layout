@@ -1,0 +1,174 @@
+body {
+  background-color: hsla(0, 0%, 10%, 1);
+  font-family: Ubuntu;
+  margin: 10px;
+}
+
+main {
+  background-color: hsla(0, 0%, 15%, 1);
+  color: hsla(0, 0%, 90%, 1);
+}
+
+section {
+  background-color: hsla(0, 0%, 15%, 1);
+  color: hsla(0, 0%, 90%, 1);
+}
+
+article {
+  background-color: hsla(0, 0%, 20%, 1);
+  color: hsla(0, 0%, 90%, 1);
+}
+
+footer {
+  background-color: hsla(0, 0%, 0%, 1);
+  color: hsla(0, 0%, 90%, 1);
+}
+
+h1, .bottom h2, nav, footer, article {
+  padding: 1vh 1vw;
+  background-color: hsla(0, 0%, 20%, 1);
+  color: hsla(0, 0%, 90%, 1);
+}
+
+h1, nav, footer {
+  text-align: center;
+  background-color: hsla(0, 0%, 20%, 1);
+  color: hsla(0, 0%, 90%, 1);
+}
+
+article {
+  text-align: justify;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-right: 1vw;
+}
+
+section.bottom img {
+  display: inline-block;
+  background-color: hsla(0, 0%, 50%, 1);
+}
+
+img.dalmatian {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 320px;
+}
+
+img.football {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+header {
+  border: 1px solid black;
+  border-radius: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: hsla(0, 0%, 20%, 1);
+  color: hsla(0, 0%, 90%, 1);
+}
+
+aside {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+a:link {
+  color: skyblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(150, 150, 255);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(0, 255, 0);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+nav a {
+  font-size: 2rem;
+  margin-left: 3vw;
+}
+
+footer a {
+  font-size: 1.5rem;
+}
+
+section.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 600px;
+}
+
+label {
+  margin: 1vh 1vw 0 0;
+}
+
+input, select, textarea {
+  margin: 0 1vw 0 1vw;
+}
+
+@media (min-width: 600px) {
+  form {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+legend {
+  grid-column: 1;
+  text-align: right;
+}
+
+label {
+  grid-column: 1;
+  text-align: right;
+  margin: 1vh 1vw;
+}
+
+input, select, button {
+  grid-column: 2/-1;
+  margin: 1vh 1vw
+}
+
+/* input {
+  padding: 20px;
+  margin: 15px;
+}
+
+button {
+  margin: 10px;
+  padding: 20px;
+} */
+@media only screen and (max-width: 600px) {
+  section.top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
